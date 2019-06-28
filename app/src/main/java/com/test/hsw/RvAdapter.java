@@ -40,7 +40,7 @@ public class RvAdapter extends RecyclerView.Adapter<RvAdapter.ViewHolder> {
 
         public ViewHolder(View itemView) {
             super(itemView);
-            view=itemView.findViewById(R.id.img);
+            view = itemView.findViewById(R.id.img);
 
         }
     }

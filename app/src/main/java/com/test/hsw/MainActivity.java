@@ -8,6 +8,9 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 老子以后写代码，一行代码一条注释。还附带简介，哼哼
+ */
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView contentRv;
@@ -17,15 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         contentRv = findViewById(R.id.content_rv);
-        //造了20条假数据
+        //造了9条假数据，假装自己是个正了八经的九宫格
         List<String> strings = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 9; i++) {
             strings.add("");
         }
         //设置RecyclerView的布局管理器，这里我给的是一个三列，垂直方向上滑动的布局
         GridLayoutManager layoutManager = new GridLayoutManager(this, 3, GridLayoutManager.VERTICAL, false);
         contentRv.setLayoutManager(layoutManager);
-        //这个就是我说的自定义边距
+        //这个就是我说的自定义边距，查看MarginDecoration这个类我具体给的配置
         contentRv.addItemDecoration(new MarginDecoration());
         //设置RecyclerView的适配器，并传入数据。目的是，每个子项的数据和布局的绑定
         contentRv.setAdapter(new RvAdapter(strings));
