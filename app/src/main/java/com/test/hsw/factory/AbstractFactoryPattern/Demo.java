@@ -5,6 +5,7 @@ public class Demo {
     /**
      * 三种封装变化方式
      * 3、抽象工厂模式
+     * 如果需要构建一组对象怎么办？
      * 抽象工厂模式用来处理这种情况，它将构建一组对象的细节封装在一个接口中：
      */
     public static void main(String[] args) {
