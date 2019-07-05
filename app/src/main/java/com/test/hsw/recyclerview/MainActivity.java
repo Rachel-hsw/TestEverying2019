@@ -1,9 +1,13 @@
-package com.test.hsw;
+package com.test.hsw.recyclerview;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.test.hsw.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,5 +36,14 @@ public class MainActivity extends AppCompatActivity {
         contentRv.addItemDecoration(new MarginDecoration());
         //设置RecyclerView的适配器，并传入数据。目的是，每个子项的数据和布局的绑定
         contentRv.setAdapter(new RvAdapter(strings));
+
+        //添加默认分割线：高度为2px，颜色为灰色
+        contentRv.addItemDecoration(new RecycleViewDivider(this, LinearLayoutManager.HORIZONTAL));
+        //添加自定义分割线：可自定义分割线drawable
+        contentRv.addItemDecoration(new RecycleViewDivider(
+                this, LinearLayoutManager.HORIZONTAL, R.drawable.ic_launcher_background));
+        //添加自定义分割线：可自定义分割线高度和颜色
+        contentRv.addItemDecoration(new RecycleViewDivider(
+                this, LinearLayoutManager.HORIZONTAL, 10, Color.BLUE));
     }
 }

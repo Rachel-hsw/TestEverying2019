@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    自定义属性
+    <declare-styleable name="DashboardProgressView">
+        <!--表盘的内边距-->
+        <attr name="padding" format="dimension" />
+        <!--表盘文字大小-->
+        <attr name="textSize" format="dimension" />
+        <!--时刻笔触大小-->
+        <attr name="scaleStrokeWidth" format="dimension" />
+        <!--一环宽度-->
+        <attr name="oneRingWidth" format="dimension" />
+        <!--二环宽度-->
+        <attr name="twoRingWidth" format="dimension" />
+        <!--时刻长度-->
+        <attr name="scaleLineWidth" format="dimension" />
+        <!--时刻刻度颜色-->
+        <attr name="scaleColor" format="color" />
+        <!---表盘文字颜色-->
+        <attr name="textColor" format="color" />
+        <!---文字显示内容-->
+        <attr name="text" format="string" />
+    </declare-styleable>
+</resources>
