@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="stage_cycle_tv" type="id" />
+
+    <item name="section_temp_tv" type="id" />
+    <item name="section_time_tv" type="id" />
+    <item name="section_scroll_bar" type="id" />
+    <item name="section_line" type="id" />
+    <item name="section_check_box" type="id" />
+
+    <item name="grid_text" type="id" />
+    <item name="grid_checkbox_tv" type="id" />
+    <item name="grid_standard_tv" type="id" />
+    <item name="genes" type="id" />
+    <item name="grid_fam_display_view" type="id" />
+    <item name="grid_vic_display_view" type="id" />
+    <item name="grid_rox_display_view" type="id" />
+    <item name="grid_cy5_display_view" type="id" />
+
+
+    <item name="tec_temp_cb0" type="id" />
+    <item name="tec_temp_cb1" type="id" />
+    <item name="tec_temp_cb2" type="id" />
+    <item name="tec_temp_cb3" type="id" />
+    <item name="tec_temp_cb4" type="id" />
+    <item name="tec_temp_cb5" type="id" />
+    <item name="tec_temp_cb6" type="id" />
+    <item name="tec_temp_cb7" type="id" />
+
+    <item name="view_float" type="id" />
+</resources>
