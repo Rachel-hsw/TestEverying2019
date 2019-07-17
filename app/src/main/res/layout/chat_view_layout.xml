@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/chat_view_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.gensee.view.xlistview.CustomXListView android:id="@id/talkingcontext" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/chat_divide_line" android:dividerHeight="1.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center" android:background="@drawable/chat_bottom" android:padding="@dimen/chat_bottom_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/chat_select_name_size" android:textColor="@color/chat_edit_view" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/chat_to_tv" android:background="@drawable/selector_chat_select_switch" android:layout_width="@dimen/chat_bottom_left_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chat_select_person_left" android:text="@string/allname" android:maxEms="6" android:singleLine="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/edt_chat_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chat_select_person_left" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.gensee.view.ChatEditText android:textSize="@dimen/chat_editview_context" android:textColor="@color/chat_edit_view" android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/edittalking" android:background="@null" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chat_editview_context_left" android:maxLines="2" android:layout_weight="1.0" />
+                        <ImageButton android:layout_gravity="center_vertical" android:id="@id/expressionbuttton" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/iv_avatar" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageButton android:id="@id/sendbutton" android:background="@drawable/sendbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/chat_sendbutton_right" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/viewpageexpressionlinear" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="110.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/viewpager" android:background="#ffffffff" android:persistentDrawingCache="animation" android:layout_width="fill_parent" android:layout_height="110.0dip" android:flipInterval="10" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/chatexpressaddimg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/rel_tip_layout" />
+    </RelativeLayout>
+</LinearLayout>

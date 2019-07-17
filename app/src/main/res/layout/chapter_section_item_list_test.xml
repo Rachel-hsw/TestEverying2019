@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/section_xuxian_w" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/chapter_section_list_item_t" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.6">
+            <TextView android:textSize="13.0sp" android:textColor="#ff00b8e5" android:gravity="center" android:id="@id/knowledge_number_tv_t" android:background="@drawable/tilte_number_bg" android:layout_width="25.0dip" android:layout_height="25.0dip" android:text="1" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/know_xuxian_iv" android:background="#ffefefef" android:layout_width="3.0px" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_below="@id/knowledge_number_tv_t" android:layout_alignLeft="@id/knowledge_number_tv_t" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff3e3a39" android:id="@id/chapter_name_t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="虎门销烟" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff999999" android:id="@id/chapter_excercise_do_t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="共31个知识点,已学习15个知识点" android:layout_below="@id/chapter_name_t" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="75.0dip" android:layout_weight="1.2">
+            <TextView android:textSize="16.0sp" android:textColor="#ff3e3a39" android:id="@id/chapter_name_t_test" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="虎门销烟" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_graslevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/chapter_name_t_test">
+                <ImageView android:id="@id/iv_ll_a" android:background="@drawable/a_gras" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/iv_ll_b" android:background="@drawable/a_gras" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/iv_ll_c" android:background="@drawable/a_gras" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/iv_ll_d" android:background="@drawable/a_gras" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/iv_ll_e" android:background="@drawable/a_gras" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/section_list_ll_t" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

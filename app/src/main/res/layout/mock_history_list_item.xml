@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/screen_side"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_single" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_style_name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单选:" />
+        <TextView android:textSize="17.0sp" android:textColor="#ff808080" android:id="@id/tv_style_value1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="24/25" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_mulicat" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_style_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="多选:" />
+        <TextView android:textSize="17.0sp" android:textColor="#ff808080" android:id="@id/tv_style_value2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="99/100" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

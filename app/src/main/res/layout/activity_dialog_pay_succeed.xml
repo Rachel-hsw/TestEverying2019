@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_pay_succeed_main" android:background="@drawable/bg_update" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:id="@id/button_pay_succeed_cancel" android:background="@drawable/bt_close_location" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="28.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageView android:background="@drawable/dialog_succeed" android:layout_width="101.0dip" android:layout_height="101.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="@color/activity_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="恭喜您，购买成功！" />
+        <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/button_pay_succeed_sure" android:background="@drawable/bt_choose_professional" android:layout_width="204.0dip" android:layout_height="32.0dip" android:layout_marginTop="35.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:f="http://schemas.android.com/apk/res-auto">
+    <com.zhy.android.percent.support.PercentLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" f:layout_heightPercent="31.25%">
+        <com.example.test.FlowLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fl_stem" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" f:layoutDirection="ltr" f:debugDraw="true" f:weightDefault="0.5">
+            <ImageView android:background="@drawable/sp_text_line1_s1" android:layout_width="143.0dip" android:layout_height="23.5dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  " />
+            <ImageView android:background="@drawable/sp_text_line1_s2" android:layout_width="117.5dip" android:layout_height="23.0dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="   " />
+            <ImageView android:background="@drawable/sp_text_line1_s3" android:layout_width="10.0dip" android:layout_height="18.0dip" />
+        </com.example.test.FlowLayout>
+        <com.example.test.FlowLayout android:gravity="center_vertical" android:orientation="horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" f:layoutDirection="ltr" f:debugDraw="true" f:weightDefault="0.5">
+            <ImageView android:background="@drawable/sp_text_line2_s1" android:layout_width="30.0dip" android:layout_height="15.0dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  " />
+            <ImageView android:background="@drawable/sp_text_line2_s2" android:layout_width="45.0dip" android:layout_height="15.0dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="   " />
+            <ImageView android:background="@drawable/sp_text_line2_s3" android:layout_width="105.0dip" android:layout_height="15.0dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="   " />
+            <ImageView android:background="@drawable/sp_text_line2_s4" android:layout_width="60.0dip" android:layout_height="15.0dip" />
+        </com.example.test.FlowLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout android:orientation="vertical" android:background="@drawable/splash1" f:layout_widthPercent="81.6%w" f:layout_heightPercent="81.6%w" />
+</com.zhy.android.percent.support.PercentLinearLayout>

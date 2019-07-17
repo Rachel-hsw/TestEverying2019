@@ -1,0 +1,106 @@
+package com.umeng.socialize.common;
+
+public class r
+{
+  public static final int A = 1998;
+  public static final int B = 1;
+  public static final int C = 2;
+  public static final int D = 3;
+  public static final int E = 4;
+  public static final int F = 5;
+  public static final int G = 6;
+  public static final int H = 7;
+  public static final int I = 8;
+  public static final int J = 9;
+  public static final int K = 10;
+  public static final int L = 11;
+  public static final int M = 12;
+  public static final int N = 13;
+  public static final int O = 14;
+  public static final int P = 15;
+  public static final int Q = 16;
+  public static final int R = 17;
+  public static final int S = 18;
+  public static final int T = 1;
+  public static final int U = 2;
+  public static final int V = 3;
+  public static final int W = 4;
+  public static final int X = 5;
+  public static final int Y = 6;
+  public static final int Z = 7;
+  public static final String a = "umeng_socialize";
+  public static final int aA = 0;
+  public static final String aB = "param";
+  public static final int aC = 1;
+  public static final int aD = 0;
+  public static final int aE = -1;
+  public static final String aF = "-3-s";
+  public static final String aG = "-3-f";
+  public static final String aH = "shake";
+  public static final String aI = "umeng_socialize_key";
+  public static final String aJ = "umeng_socialize_secret";
+  public static final String aK = "data";
+  public static final String aL = "send_result";
+  public static final String aM = "id";
+  public static final String aN = "user_id";
+  public static final String aO = "sina_expires_in";
+  public static final String aP = "http://www.umeng.com/social";
+  public static final String aQ = "/download/.um";
+  public static final String aR = "deault_id";
+  public static final int aa = 8;
+  public static final int ab = 9;
+  public static final int ac = 10;
+  public static final int ad = 11;
+  public static final int ae = 12;
+  public static final int af = 13;
+  public static final int ag = 14;
+  public static final int ah = 15;
+  public static final int ai = 16;
+  public static final int aj = 17;
+  public static final int ak = 18;
+  public static final int al = 19;
+  public static final int am = 20;
+  public static final int an = 21;
+  public static final int ao = 22;
+  public static final int ap = 23;
+  public static final int aq = 24;
+  public static final int ar = 25;
+  public static final int as = 25;
+  public static final String at = "(";
+  public static final String au = ")";
+  public static final String av = "+";
+  public static final String aw = "-";
+  public static final String ax = "umeng_social_method";
+  public static final String ay = "umeng_social_oauth";
+  public static final String az = "umeng_social_shake";
+  public static final String b = "umeng_socialize_token_expire_in";
+  public static final String c = "umeng_socialize_qq";
+  public static final String d = "umeng_socialize_refresh_token";
+  public static final String e = "umeng_socialize_refresh_token_expires";
+  public static final String f = "Android";
+  public static String g = "";
+  public static String h = "";
+  public static boolean i = false;
+  public static final String j = "4.3.0150716";
+  public static final String k = "com.umeng.socialize";
+  public static final String l = "2.0";
+  public static final String m = "image_uri_cache";
+  public static final String n = "wx_appid";
+  public static final String o = "wx_secret";
+  public static final String p = "qzone_id";
+  public static final String q = "qzone_secret";
+  public static boolean r = false;
+  public static boolean s = false;
+  public static boolean t = false;
+  public static String u = null;
+  public static final int v = 1;
+  public static final int w = 16;
+  public static final int x = 32;
+  public static final int y = 15;
+  public static final int z = 240;
+}
+
+/* Location:           C:\Androidnixiangzhushou\zikao_classes_dex2jar.jar
+ * Qualified Name:     com.umeng.socialize.common.r
+ * JD-Core Version:    0.6.0
+ */

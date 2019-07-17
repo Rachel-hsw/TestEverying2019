@@ -1,0 +1,27 @@
+package com.tencent.connect.share;
+
+import android.app.Activity;
+import android.os.Bundle;
+import com.tencent.open.utils.AsynLoadImgBack;
+import com.tencent.tauth.IUiListener;
+import java.util.ArrayList;
+
+class QzoneShare$1
+  implements AsynLoadImgBack
+{
+  public void batchSaved(int paramInt, ArrayList<String> paramArrayList)
+  {
+    if (paramInt == 0)
+      this.a.putStringArrayList("imageUrl", paramArrayList);
+    QzoneShare.a(this.d, this.b, this.a, this.c);
+  }
+
+  public void saved(int paramInt, String paramString)
+  {
+  }
+}
+
+/* Location:           C:\Androidnixiangzhushou\zikao_classes_dex2jar.jar
+ * Qualified Name:     com.tencent.connect.share.QzoneShare.1
+ * JD-Core Version:    0.6.0
+ */

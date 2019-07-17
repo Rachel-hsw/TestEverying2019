@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:textSize="16.0sp" android:textColor="@color/activity_color" android:id="@id/button_class_video_left" android:background="@drawable/class_video_all_up" android:layout_width="81.0dip" android:layout_height="31.0dip" android:text="全部" />
+        <RelativeLayout android:layout_width="81.0dip" android:layout_height="wrap_content">
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/button_class_video_center" android:background="@drawable/chongci" android:layout_width="81.0dip" android:layout_height="31.0dip" android:text="冲刺串讲" />
+            <ImageView android:id="@id/chongci_red_dot" android:background="@drawable/red_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/button_class_video_right" android:background="@drawable/class_video_mine_down" android:layout_width="81.0dip" android:layout_height="31.0dip" android:text="我的" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/layout_video_main_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

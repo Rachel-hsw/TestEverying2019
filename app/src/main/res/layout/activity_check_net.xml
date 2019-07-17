@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_check_net_main" android:background="@drawable/bg_update" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="#ff666666" android:gravity="center" android:id="@id/text_dialog_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@string/app_name" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="57.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/activity_color" android:id="@id/button_dialog_sure" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="确定" android:layout_weight="1.0" />
+        <ImageView android:background="#ff666666" android:layout_width="1.0px" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+        <Button android:textSize="18.0sp" android:textColor="@color/activity_color" android:id="@id/button_dialog_cancel" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/chat_view_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relQuestion" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/chat_system_message" android:ellipsize="end" android:id="@id/txtQTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Q:" android:singleLine="true" />
+        <TextView android:textColor="@color/qa_item_content" android:id="@id/txtQContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/txtQTag" />
+        <TextView android:textColor="@color/qa_name_lit_red" android:ellipsize="end" android:gravity="right" android:id="@id/txtQUser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/txtQTime" android:layout_toRightOf="@id/txtQTag" android:layout_below="@id/txtQContent" />
+        <TextView android:textSize="@dimen/chat_listview_time" android:textColor="@color/qa_name_lit_red" android:id="@id/txtQTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txtQContent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/relAnswer" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:background="@color/chat_divide_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:ellipsize="end" android:id="@id/txtATag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A:" android:singleLine="true" />
+        <TextView android:textColor="@color/qa_item_content" android:id="@id/txtAContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/txtATag" />
+        <TextView android:textColor="@color/qa_name_lit_red" android:ellipsize="end" android:gravity="right" android:id="@id/txtAUser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/txtAime" android:layout_toRightOf="@id/txtATag" android:layout_below="@id/txtAContent" />
+        <TextView android:textSize="@dimen/chat_listview_time" android:textColor="@color/qa_name_lit_red" android:id="@id/txtAime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txtAContent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

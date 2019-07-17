@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title">
+        <Button android:id="@id/button_video_sale_back" android:background="@null" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/screen_side" android:drawableLeft="@drawable/bt_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="课程详情" android:singleLine="true" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_video_sale_share" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:background="@drawable/bt_share" android:layout_width="21.0dip" android:layout_height="21.0dip" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/screen_side" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="102.0dip" android:layout_height="102.0dip">
+            <ImageView android:id="@id/image_video_sale_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_wait_for_loading_info" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffed3d3d" android:gravity="center" android:id="@id/text_video_sale_avatar" android:background="@drawable/video_avatar_state_bottom" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="102.0dip" android:layout_marginLeft="7.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/text_video_sale_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff00b8e5" android:gravity="center_vertical" android:id="@id/text_video_sale_adv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:maxLines="2" android:includeFontPadding="false" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:layout_gravity="bottom" android:id="@id/text_video_sale_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="36.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/text_video_sale_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentTop="true" />
+                <TextView android:textSize="18.0sp" android:textColor="#ffffa800" android:id="@id/text_video_sale_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentBottom="true" />
+                <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/button_video_sale_buy" android:background="@drawable/button_buy" android:layout_width="72.0dip" android:layout_height="30.0dip" android:text="购买" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/button_video_sale_preview" android:background="@drawable/button_preview" android:visibility="gone" android:layout_width="72.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="试看" android:layout_toLeftOf="@id/button_video_sale_buy" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="14.0sp" android:textColor="@color/activity_color" android:gravity="center" android:id="@id/button_video_sale_intro" android:background="@drawable/left_tab_click" android:layout_width="0.0dip" android:layout_height="@dimen/activity_title" android:text="课程介绍" android:layout_weight="1.0" />
+        <ImageView android:background="@color/activity_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+        <Button android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/button_video_sale_list" android:background="@drawable/right_tab_unclick" android:layout_width="0.0dip" android:layout_height="@dimen/activity_title" android:text="课程目录" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/listview_video_sale" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffdcdcdc" android:dividerHeight="1.0px" />
+        <WebView android:id="@id/webview_video_sale" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

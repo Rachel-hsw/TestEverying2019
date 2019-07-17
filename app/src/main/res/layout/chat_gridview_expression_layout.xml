@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <GridView android:gravity="center_horizontal" android:id="@id/allexpressionGrid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="6" />
+    </RelativeLayout>
+</LinearLayout>

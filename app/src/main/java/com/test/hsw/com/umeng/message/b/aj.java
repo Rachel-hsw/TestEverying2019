@@ -1,0 +1,34 @@
+package com.umeng.message.b;
+
+ enum aj
+{
+  aj(int arg3)
+  {
+    super(paramInt, i, j, null);
+  }
+
+  public final int b()
+  {
+    return 80;
+  }
+
+  public final String c()
+  {
+    return "http://apoll.m.taobao.com";
+  }
+
+  public final String d()
+  {
+    return "42.120.111.1";
+  }
+
+  public final String e()
+  {
+    return "http://api.m.taobao.com/rest/api3.do";
+  }
+}
+
+/* Location:           C:\Androidnixiangzhushou\zikao_classes_dex2jar.jar
+ * Qualified Name:     com.umeng.message.b.aj
+ * JD-Core Version:    0.6.0
+ */

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_dialog_simple_succeed" android:background="@drawable/bg_update" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/dialog_simple_succeed" android:layout_width="101.0dip" android:layout_height="101.0dip" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/activity_color" android:id="@id/text_dialog_simple_succeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+</LinearLayout>
