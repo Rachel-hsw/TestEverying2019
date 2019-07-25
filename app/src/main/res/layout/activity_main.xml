@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".recyclerview.MainActivity">
-
+    <!--未测试完成https://developer.android.google.cn/reference/android/graphics/drawable/LayerDrawable.html?hl=en#attr_android:id-->
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/test"/>
 <android.support.v7.widget.RecyclerView
     android:id="@+id/content_rv"
     android:layout_width="match_parent"
