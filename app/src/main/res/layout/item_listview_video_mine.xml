@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/screen_side" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/bg_main" android:padding="@dimen/screen_side" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="78.0dip" android:layout_height="78.0dip">
+            <ImageView android:id="@id/image_item_video_mine_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_wait_for_loading_info" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffed3d3d" android:gravity="center" android:id="@id/text_item_video_mine_avatar" android:background="@drawable/video_avatar_state_bottom" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_marginRight="@dimen/screen_side" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/text_item_video_mine_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:layout_alignParentTop="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/text_item_video_mine_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:layout_below="@id/text_item_video_mine_title" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ProgressBar android:id="@id/item_progress" android:visibility="visible" android:layout_width="70.0dip" android:layout_height="21.0dip" android:progressDrawable="@drawable/progressbar_color" style="?android:attr/progressBarStyleHorizontal" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff00b8e6" android:gravity="center" android:id="@id/btn_down_load_jiangyi" android:background="@drawable/down_load_jiangyi" android:clickable="true" android:layout_width="70.0dip" android:layout_height="21.0dip" android:text="讲义下载" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ffe58100" android:gravity="center" android:id="@id/btn_qq_service" android:background="@drawable/down_load_jiangyi" android:clickable="true" android:layout_width="70.0dip" android:layout_height="21.0dip" android:layout_marginLeft="5.0dip" android:text="QQ群服务" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:textColor="#fffa4343" android:id="@id/text_item_video_mine_state" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/text_item_video_mine_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6个课时" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_dialog_simple" android:background="@drawable/bg_update" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/activity_color" android:gravity="center" android:id="@id/text_dialog_simple_message" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/activity_color" android:gravity="center" android:id="@id/text_dialog_simple_finish" android:layout_width="fill_parent" android:layout_height="@dimen/activity_title" android:text="我知道了" />
+</LinearLayout>

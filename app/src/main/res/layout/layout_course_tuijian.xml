@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff6f6f6" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff666666" android:gravity="center" android:layout_width="fill_parent" android:layout_height="30.5dip" android:text="课程推荐" />
+    <ImageView android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/bg_main" android:padding="@dimen/screen_side" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="98.0dip" android:layout_height="98.0dip">
+            <ImageView android:id="@id/image_item_video_all_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_wait_for_loading_info" android:contentDescription="@string/app_name" />
+            <ImageView android:id="@id/image_item_video_all_top" android:layout_width="42.0dip" android:layout_height="40.0dip" android:src="@drawable/video_avatar_state_top" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffed3d3d" android:gravity="center" android:id="@id/text_item_video_all_avatar" android:background="@drawable/video_avatar_state_bottom" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_marginRight="@dimen/screen_side" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/text_item_video_all_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="外国文学史" android:maxLines="2" android:includeFontPadding="false" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff00b8e5" android:id="@id/text_item_video_all_adv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="精品课程保证你通过" android:maxLines="2" android:includeFontPadding="false" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="15.0sp" android:textColor="#ffffa800" android:id="@id/text_item_video_all_new_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/text_item_video_all_old_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:includeFontPadding="false" />
+                <TextView android:textSize="12.0sp" android:textColor="#fff94f4f" android:gravity="center" android:id="@id/text_item_video_all_discount" android:background="@drawable/video_all_lable" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="7.0dip" android:includeFontPadding="false" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:textColor="#fffa4343" android:id="@id/text_item_video_all_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未开课" />
+            <TextView android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/text_item_video_all_class" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="104个视频" />
+            <ImageView android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/text_item_video_all_sale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已售100000" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

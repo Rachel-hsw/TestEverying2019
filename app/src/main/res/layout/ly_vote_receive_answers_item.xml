@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/vote_answer_item_ver" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/vote_receiver_choice_ly" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RadioButton android:id="@id/vote_receive_answe_rb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_radio" />
+            <CheckBox android:id="@id/vote_receive_answer_cb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_checkbox" />
+            <TextView android:textSize="@dimen/vote_answer_tv" android:textColor="@color/vote_answer_tv" android:id="@id/vote_receive_answer_tv" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="阿里打开等级" />
+            <ImageView android:id="@id/vote_receive_answer_iv" android:background="@drawable/vote_receive_iv_success" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/vote_receive_total_join" android:textColor="@color/vote_receive_total_join" android:id="@id/vote_receive_answer_count_tv" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.gensee.view.VoteProgressBar android:id="@id/vote_progress_bar_multi" android:layout_width="100.0dip" android:layout_height="20.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/vote_progress_style_blue" style="?android:attr/progressBarStyleHorizontal" />
+        <com.gensee.view.VoteProgressBar android:id="@id/vote_progress_bar_single" android:layout_width="100.0dip" android:layout_height="20.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/vote_progress_style_blue" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <EditText android:gravity="left" android:id="@id/vote_receive_wd_item_edt" android:background="@drawable/vote_wdt_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="66.0dip" android:maxLines="4" />
+</LinearLayout>

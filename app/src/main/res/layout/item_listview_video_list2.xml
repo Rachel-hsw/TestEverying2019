@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/screen_side" android:paddingBottom="@dimen/screen_side" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/screen_side" android:layout_marginRight="@dimen/screen_side" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/activity_color" android:gravity="center" android:id="@id/text_video_list_number" android:background="@drawable/video_number" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+        <RelativeLayout android:layout_width="71.0dip" android:layout_height="56.0dip" android:layout_marginLeft="@dimen/screen_side">
+            <ImageView android:id="@id/image_video_list_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/image_wait_for_loading" android:contentDescription="@string/app_name" />
+            <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/video_play" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="56.0dip" android:layout_marginLeft="@dimen/screen_side" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/text_video_list_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" />
+            <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:src="@drawable/video_time" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/text_video_list_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+                <ImageView android:layout_width="12.0dip" android:layout_height="17.0dip" android:layout_marginLeft="22.0dip" android:src="@drawable/video_count" android:contentDescription="@string/app_name" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/text_video_list_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/screen_side" android:layout_marginRight="@dimen/screen_side" android:contentDescription="@string/app_name" />
+</LinearLayout>

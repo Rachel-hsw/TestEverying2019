@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/splash_vp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_guide_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/layout_guide_go_login" android:background="@drawable/guide_button_login" android:layout_width="0.0dip" android:layout_height="67.0dip" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/guide_text_login" android:layout_width="41.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <ImageView android:background="#ffffffff" android:layout_width="1.0px" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+        <RelativeLayout android:id="@id/layout_guide_go_register" android:background="@drawable/guide_button_register" android:layout_width="0.0dip" android:layout_height="67.0dip" android:layout_weight="1.0">
+            <ImageView android:background="@drawable/guide_text_register" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_title" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/image_guide_dots1" android:background="@drawable/guide_dots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/image_guide_dots2" android:background="@drawable/guide_dots1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/image_guide_dots3" android:background="@drawable/guide_dots1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+</RelativeLayout>

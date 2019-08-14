@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/live_play_ll" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_video_play_live_main" android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.gensee.view.GSDocViewGx android:id="@id/gsvideoview_video_play_live" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/layout_video_play_live_control" android:background="@drawable/bg_video_play_control" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/button_video_play_live_back" android:background="@drawable/player_back" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/screen_side" android:layout_marginTop="@dimen/screen_side" />
+            <Button android:id="@id/button_video_play_live_share" android:background="@drawable/course_share" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="@dimen/screen_side" android:layout_marginRight="@dimen/screen_side" android:layout_alignParentRight="true" />
+            <Button android:id="@id/button_video_play_live_full_screan" android:background="@drawable/full_screan" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="@dimen/screen_side" android:layout_marginBottom="9.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/progress_video_play_live" android:visibility="gone" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_video_play_live_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="14.0sp" android:textColor="@color/activity_color" android:gravity="center" android:id="@id/button_video_play_live_left" android:background="@drawable/left_tab_click" android:layout_width="0.0dip" android:layout_height="@dimen/activity_title" android:text="聊天" android:layout_weight="1.0" />
+            <ImageView android:background="@color/activity_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+            <Button android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/button_video_play_live_right" android:background="@drawable/right_tab_unclick" android:layout_width="0.0dip" android:layout_height="@dimen/activity_title" android:text="讲义" android:layout_weight="1.0" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/layout_video_play_live_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

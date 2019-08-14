@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.android.percent.support.PercentLinearLayout android:orientation="vertical" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout android:gravity="center" android:id="@id/subject_rl_head" android:background="@drawable/brush_main_bg" android:visibility="gone" android:layout_height="0.0dip" android:layout_weight="1.0" app:layout_widthPercent="100%" app:layout_marginTopPercent="0.5%">
+            <TextView android:textSize="30.0sp" android:textColor="@color/white" android:id="@id/tv2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_above="@id/tv2" app:layout_marginBottomPercent="2.5%" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@id/tv2" app:layout_marginTopPercent="2.5%" />
+        </com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout>
+        <com.zhy.android.percent.support.PercentFrameLayout android:orientation="vertical" android:layout_width="fill_parent" app:layout_heightPercent="108.53%w" app:layout_marginTopPercent="3.55%w">
+            <com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout android:orientation="vertical" android:id="@id/center" android:background="@drawable/center" app:layout_widthPercent="36.3%w" app:layout_heightPercent="36.3%w" app:layout_marginLeftPercent="32.08%w" app:layout_marginTopPercent="28.61%w">
+                <com.zhy.android.percent.support.PercentLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:layout_marginLeftPercent="20%">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/intell_practice" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="智能刷题" app:layout_marginTopPercent="3%" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout>
+            <com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bottom" android:background="@drawable/bottom" android:visibility="visible" android:layout_centerHorizontal="true" app:layout_widthPercent="64.58%w" app:layout_heightPercent="31.9%w" app:layout_marginLeftPercent="17.77%w" app:layout_marginTopPercent="61.38%w">
+                <com.zhy.android.percent.support.PercentLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:layout_marginBottomPercent="9.56%">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/exam" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="模拟考" app:layout_marginTopPercent="3%" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout>
+            <com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/right" android:background="@drawable/right" app:layout_widthPercent="31.9%w" app:layout_heightPercent="64.58%w" app:layout_marginLeftPercent="65%w" app:layout_marginTopPercent="14.8%w">
+                <com.zhy.android.percent.support.PercentLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_marginLeftPercent="30.43%">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/knowledge_explain" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="知识点讲解" app:layout_marginTopPercent="3%" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout>
+            <com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/top" android:background="@drawable/top" app:layout_widthPercent="64.58%w" app:layout_heightPercent="31.9%w" app:layout_marginLeftPercent="17.77%w">
+                <com.zhy.android.percent.support.PercentLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_marginTopPercent="9.56%">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/chapter_section" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="章节练习" app:layout_marginTopPercent="4%" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout>
+            <com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/left" android:background="@drawable/left" android:layout_centerVertical="true" app:layout_widthPercent="31.9%w" app:layout_heightPercent="64.58%w" app:layout_marginLeftPercent="3.4%" app:layout_marginTopPercent="14.30%w">
+                <com.zhy.android.percent.support.PercentLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_marginLeftPercent="21.30%">
+                    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/chuanjiang_vedio" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="历年真题" app:layout_marginTopPercent="3%" />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout>
+            <com.zhy.android.percent.support.PercentRelativeLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" app:layout_heightPercent="16.7%" app:layout_marginTopPercent="87.3533%">
+                <com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout android:orientation="vertical" android:id="@id/prl_collect" android:background="@drawable/brush_collect_bg" android:layout_alignParentLeft="true" app:layout_widthPercent="49.1%" app:layout_heightPercent="100%">
+                    <ImageView android:background="@drawable/brush_collect" android:layout_width="45.0dip" android:layout_height="45.0dip" app:layout_marginLeftPercent="15.2%" app:layout_marginTopPercent="8%" />
+                    <TextView android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收藏夹" app:layout_marginLeftPercent="55.2%" app:layout_marginTopPercent="43.5%" />
+                </com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout>
+                <com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout android:orientation="vertical" android:id="@id/prl_error" android:background="@drawable/brush_error_bg" android:layout_alignParentRight="true" app:layout_widthPercent="49.1%" app:layout_heightPercent="100%">
+                    <ImageView android:background="@drawable/brush_error" android:layout_width="45.0dip" android:layout_height="45.0dip" app:layout_marginLeftPercent="56.2%" app:layout_marginTopPercent="8%" />
+                    <TextView android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="错题篮" app:layout_marginLeftPercent="15.2%" app:layout_marginTopPercent="43.5%" />
+                </com.withustudy.koudaizikao.custom.IrregularPercentRelativeLayout>
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.zhy.android.percent.support.PercentFrameLayout>
+        <RelativeLayout android:background="@drawable/brush_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/chapter_section_excerise_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:background="@drawable/zhangjie" android:layout_width="51.0dip" android:layout_height="51.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="章节练习" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/intelligent_brush_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:background="@drawable/shuti" android:layout_width="54.0dip" android:layout_height="63.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="智能刷题" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/knowledge_explain_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_below="@id/chapter_section_excerise_ll" android:layout_alignLeft="@id/simulation_test_ll">
+                <ImageView android:background="@drawable/kowledge" android:layout_width="51.0dip" android:layout_height="51.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="知识点讲解" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/knowledge_map_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="38.0dip" android:layout_alignTop="@id/knowledge_explain_ll" android:layout_alignParentLeft="true">
+                <ImageView android:background="@drawable/zhishi" android:layout_width="51.0dip" android:layout_height="51.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="串讲视频" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/special_breakthrough_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="58.0dip" android:layout_alignLeft="@id/knowledge_map_btn" android:layout_alignTop="@id/intelligent_brush_ll">
+                <ImageView android:background="@drawable/tupo" android:layout_width="51.0dip" android:layout_height="51.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="历年真题" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/simulation_rank_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" android:layout_alignLeft="@id/intelligent_brush_ll" android:layout_alignTop="@id/special_breakthrough_ll">
+                <ImageView android:background="@drawable/simu_rank" android:layout_width="51.0dip" android:layout_height="51.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="考试榜" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/simulation_test_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="33.0dip" android:layout_alignTop="@id/special_breakthrough_ll" android:layout_alignParentRight="true">
+                <ImageView android:background="@drawable/simu" android:layout_width="51.0dip" android:layout_height="51.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="智能组卷模拟考" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</LinearLayout>

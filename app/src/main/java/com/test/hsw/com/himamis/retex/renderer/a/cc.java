@@ -1,0 +1,140 @@
+package com.himamis.retex.renderer.a;
+
+import java.util.Map;
+
+final class cc
+{
+  static
+  {
+    dr.n.put("qquad", "\\quad\\quad");
+    dr.n.put(" ", "\\nbsp");
+    dr.n.put("ne", "\\not\\equals");
+    dr.n.put("neq", "\\not\\equals");
+    dr.n.put("ldots", "\\mathinner{\\ldotp\\ldotp\\ldotp}");
+    dr.n.put("dotsc", "\\ldots");
+    dr.n.put("dots", "\\ldots");
+    dr.n.put("cdots", "\\mathinner{\\cdotp\\cdotp\\cdotp}");
+    dr.n.put("dotsb", "\\cdots");
+    dr.n.put("dotso", "\\ldots");
+    dr.n.put("dotsi", "\\!\\cdots");
+    dr.n.put("bowtie", "\\mathrel\\triangleright\\joinrel\\mathrel\\triangleleft");
+    dr.n.put("models", "\\mathrel|\\joinrel\\equals");
+    dr.n.put("Doteq", "\\doteqdot");
+    dr.n.put("{", "\\lbrace");
+    dr.n.put("}", "\\rbrace");
+    dr.n.put("|", "\\Vert");
+    dr.n.put("&", "\\textampersand");
+    dr.n.put("%", "\\textpercent");
+    dr.n.put("_", "\\underscore");
+    dr.n.put("$", "\\textdollar");
+    dr.n.put("@", "\\jlatexmatharobase");
+    dr.n.put("#", "\\jlatexmathsharp");
+    dr.n.put("relbar", "\\mathrel{\\smash-}");
+    dr.n.put("hookrightarrow", "\\lhook\\joinrel\\joinrel\\joinrel\\rightarrow");
+    dr.n.put("hookleftarrow", "\\leftarrow\\joinrel\\joinrel\\joinrel\\rhook");
+    dr.n.put("Longrightarrow", "\\Relbar\\joinrel\\Rightarrow");
+    dr.n.put("longrightarrow", "\\relbar\\joinrel\\rightarrow");
+    dr.n.put("Longleftarrow", "\\Leftarrow\\joinrel\\Relbar");
+    dr.n.put("longleftarrow", "\\leftarrow\\joinrel\\relbar");
+    dr.n.put("Longleftrightarrow", "\\Leftarrow\\joinrel\\Rightarrow");
+    dr.n.put("longleftrightarrow", "\\leftarrow\\joinrel\\rightarrow");
+    dr.n.put("iff", "\\;\\Longleftrightarrow\\;");
+    dr.n.put("implies", "\\;\\Longrightarrow\\;");
+    dr.n.put("impliedby", "\\;\\Longleftarrow\\;");
+    dr.n.put("mapsto", "\\mapstochar\\rightarrow");
+    dr.n.put("longmapsto", "\\mapstochar\\longrightarrow");
+    dr.n.put("log", "\\mathop{\\mathrm{log}}\\nolimits");
+    dr.n.put("lg", "\\mathop{\\mathrm{lg}}\\nolimits");
+    dr.n.put("ln", "\\mathop{\\mathrm{ln}}\\nolimits");
+    dr.n.put("ln", "\\mathop{\\mathrm{ln}}\\nolimits");
+    dr.n.put("lim", "\\mathop{\\mathrm{lim}}");
+    dr.n.put("limsup", "\\mathop{\\mathrm{lim\\,sup}}");
+    dr.n.put("liminf", "\\mathop{\\mathrm{lim\\,inf}}");
+    dr.n.put("injlim", "\\mathop{\\mathrm{inj\\,lim}}");
+    dr.n.put("projlim", "\\mathop{\\mathrm{proj\\,lim}}");
+    dr.n.put("varinjlim", "\\mathop{\\underrightarrow{\\mathrm{lim}}}");
+    dr.n.put("varprojlim", "\\mathop{\\underleftarrow{\\mathrm{lim}}}");
+    dr.n.put("varliminf", "\\mathop{\\underline{\\mathrm{lim}}}");
+    dr.n.put("varlimsup", "\\mathop{\\overline{\\mathrm{lim}}}");
+    dr.n.put("sin", "\\mathop{\\mathrm{sin}}\\nolimits");
+    dr.n.put("arcsin", "\\mathop{\\mathrm{arcsin}}\\nolimits");
+    dr.n.put("sinh", "\\mathop{\\mathrm{sinh}}\\nolimits");
+    dr.n.put("cos", "\\mathop{\\mathrm{cos}}\\nolimits");
+    dr.n.put("arccos", "\\mathop{\\mathrm{arccos}}\\nolimits");
+    dr.n.put("cot", "\\mathop{\\mathrm{cot}}\\nolimits");
+    dr.n.put("arccot", "\\mathop{\\mathrm{arccot}}\\nolimits");
+    dr.n.put("cosh", "\\mathop{\\mathrm{cosh}}\\nolimits");
+    dr.n.put("tan", "\\mathop{\\mathrm{tan}}\\nolimits");
+    dr.n.put("arctan", "\\mathop{\\mathrm{arctan}}\\nolimits");
+    dr.n.put("tanh", "\\mathop{\\mathrm{tanh}}\\nolimits");
+    dr.n.put("coth", "\\mathop{\\mathrm{coth}}\\nolimits");
+    dr.n.put("sec", "\\mathop{\\mathrm{sec}}\\nolimits");
+    dr.n.put("arcsec", "\\mathop{\\mathrm{arcsec}}\\nolimits");
+    dr.n.put("arccsc", "\\mathop{\\mathrm{arccsc}}\\nolimits");
+    dr.n.put("sech", "\\mathop{\\mathrm{sech}}\\nolimits");
+    dr.n.put("csc", "\\mathop{\\mathrm{csc}}\\nolimits");
+    dr.n.put("csch", "\\mathop{\\mathrm{csch}}\\nolimits");
+    dr.n.put("max", "\\mathop{\\mathrm{max}}");
+    dr.n.put("min", "\\mathop{\\mathrm{min}}");
+    dr.n.put("sup", "\\mathop{\\mathrm{sup}}");
+    dr.n.put("inf", "\\mathop{\\mathrm{inf}}");
+    dr.n.put("arg", "\\mathop{\\mathrm{arg}}\\nolimits");
+    dr.n.put("ker", "\\mathop{\\mathrm{ker}}\\nolimits");
+    dr.n.put("dim", "\\mathop{\\mathrm{dim}}\\nolimits");
+    dr.n.put("hom", "\\mathop{\\mathrm{hom}}\\nolimits");
+    dr.n.put("det", "\\mathop{\\mathrm{det}}");
+    dr.n.put("exp", "\\mathop{\\mathrm{exp}}\\nolimits");
+    dr.n.put("Pr", "\\mathop{\\mathrm{Pr}}");
+    dr.n.put("gcd", "\\mathop{\\mathrm{gcd}}");
+    dr.n.put("deg", "\\mathop{\\mathrm{deg}}\\nolimits");
+    dr.n.put("bmod", "\\:\\mathbin{\\mathrm{mod}}\\:");
+    dr.n.put("JLaTeXMath", "\\mathbb{J}\\LaTeX Math");
+    dr.n.put("Mapsto", "\\Mapstochar\\Rightarrow");
+    dr.n.put("mapsfrom", "\\leftarrow\\mapsfromchar");
+    dr.n.put("Mapsfrom", "\\Leftarrow\\Mapsfromchar");
+    dr.n.put("Longmapsto", "\\Mapstochar\\Longrightarrow");
+    dr.n.put("longmapsfrom", "\\longleftarrow\\mapsfromchar");
+    dr.n.put("Longmapsfrom", "\\Longleftarrow\\Mapsfromchar");
+    dr.n.put("arrowvert", "\\vert");
+    dr.n.put("Arrowvert", "\\Vert");
+    dr.n.put("aa", "\\mathring{a}");
+    dr.n.put("AA", "\\mathring{A}");
+    dr.n.put("ddag", "\\ddagger");
+    dr.n.put("dag", "\\dagger");
+    dr.n.put("Doteq", "\\doteqdot");
+    dr.n.put("doublecup", "\\Cup");
+    dr.n.put("doublecap", "\\Cap");
+    dr.n.put("llless", "\\lll");
+    dr.n.put("gggtr", "\\ggg");
+    dr.n.put("Alpha", "\\mathord{\\mathrm{A}}");
+    dr.n.put("Beta", "\\mathord{\\mathrm{B}}");
+    dr.n.put("Epsilon", "\\mathord{\\mathrm{E}}");
+    dr.n.put("Zeta", "\\mathord{\\mathrm{Z}}");
+    dr.n.put("Eta", "\\mathord{\\mathrm{H}}");
+    dr.n.put("Iota", "\\mathord{\\mathrm{I}}");
+    dr.n.put("Kappa", "\\mathord{\\mathrm{K}}");
+    dr.n.put("Mu", "\\mathord{\\mathrm{M}}");
+    dr.n.put("Nu", "\\mathord{\\mathrm{N}}");
+    dr.n.put("Omicron", "\\mathord{\\mathrm{O}}");
+    dr.n.put("Rho", "\\mathord{\\mathrm{P}}");
+    dr.n.put("Tau", "\\mathord{\\mathrm{T}}");
+    dr.n.put("Chi", "\\mathord{\\mathrm{X}}");
+    dr.n.put("hdots", "\\ldots");
+    dr.n.put("restriction", "\\upharpoonright");
+    dr.n.put("celsius", "\\mathord{{}^\\circ\\mathrm{C}}");
+    dr.n.put("micro", "\\textmu");
+    dr.n.put("marker", "\\kern{0.25ex}\\rule{0.5ex}{1.2ex}\\kern{0.25ex}");
+    dr.n.put("hybull", "\\rule[0.6ex]{1ex}{0.2ex}");
+    dr.n.put("block", "\\rule{1ex}{1.2ex}");
+    dr.n.put("uhblk", "\\rule[0.6ex]{1ex}{0.6ex}");
+    dr.n.put("lhblk", "\\rule{1ex}{0.6ex}");
+    dr.n.put("notin", "\\not\\in");
+    dr.n.put("rVert", "\\Vert");
+    dr.n.put("lVert", "\\Vert");
+  }
+}
+
+/* Location:           C:\Androidnixiangzhushou\zikao_classes_dex2jar.jar
+ * Qualified Name:     com.himamis.retex.renderer.a.cc
+ * JD-Core Version:    0.6.0
+ */

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_item_live_bought" android:background="@color/bg_main" android:padding="@dimen/screen_side" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/text_item_live_bought_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff999999" android:id="@id/text_item_live_bought_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/text_item_live_bought_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="@dimen/screen_side" android:contentDescription="@string/app_name" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_dialog_pay_main" android:background="@drawable/bg_update" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff232323" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付" android:layout_centerInParent="true" />
+        <Button android:id="@id/button_dialog_pay_back" android:background="@drawable/bt_close_location" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="@dimen/screen_side" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:background="@color/activity_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff232323" android:gravity="center_horizontal" android:id="@id/text_dialog_pay_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="14.0dip" android:includeFontPadding="false" android:lineSpacingExtra="5.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="13.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ff232323" android:id="@id/text_dialog_pay_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="#ff191919" android:id="@id/text_dialog_pay_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:includeFontPadding="false" />
+    </LinearLayout>
+    <ImageView android:background="#ffe5e2e2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="14.0dip" android:layout_marginRight="13.0dip" android:contentDescription="@string/app_name" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_dialog_pay_sco_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="13.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/layout_dialog_pay_sco_iv" android:background="@drawable/un_check_sco" android:layout_width="18.0dip" android:layout_height="18.0dip" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:id="@id/layout_dialog_pay_sco_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="使用奖学金0元" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_dialog_pay_zhifubao" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="13.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/image_dialog_pay_zhifubao" android:layout_width="18.0dip" android:layout_height="18.0dip" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="支付宝支付" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_dialog_pay_weixin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="13.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/image_dialog_pay_weixin" android:layout_width="18.0dip" android:layout_height="18.0dip" android:contentDescription="@string/app_name" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="微信支付" />
+    </LinearLayout>
+    <ImageView android:background="#ffe5e2e2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="14.0dip" android:layout_marginRight="13.0dip" android:contentDescription="@string/app_name" />
+    <Button android:textSize="17.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/button_dialog_pay_sure" android:background="@drawable/bt_choose_professional" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="立即支付" />
+</LinearLayout>
