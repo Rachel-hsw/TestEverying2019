@@ -21,4 +21,15 @@
         <!---文字显示内容-->
         <attr name="text" format="string" />
     </declare-styleable>
+    <declare-styleable name="ProgressBar">
+        <!--背景颜色-->
+        <attr name="backgroundColor" format="color" />
+        <!--进度条颜色-->
+        <attr name="processColor" format="color" />
+        <!--进度条模式：0横向1竖向-->
+        <attr name="model" format="enum">
+            <enum name="Horizontal" value="0" />
+            <enum name="Vertical" value="1" />
+        </attr>
+    </declare-styleable>
 </resources>

@@ -6,7 +6,7 @@
         android:drawable="@drawable/bg_white_gray"/>
     <item
         android:id="@+id/hh"
-        android:drawable="#95CE31"
+        android:drawable="@color/green"
         android:gravity="center"
         android:width="10dp"
         android:height="10dp"/>
