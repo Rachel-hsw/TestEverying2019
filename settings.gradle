@@ -1,1 +1,1 @@
-include ':app', ':buildasynchttpserver', ':socketdemo_pigchatroom', ':wifip2p'
+include ':app', ':buildasynchttpserver', ':socketdemo_pigchatroom', ':wifip2p', ':get_wifi_ssid_and_password'
