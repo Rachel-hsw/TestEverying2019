@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShadowView">
+        <attr name="shadowColor" format="color"/>
+        <attr name="shadowDistance" format="dimension"/>
+        <attr name="shadowRadius" format="dimension"/>
+        <attr name="shadowDx" format="dimension"/>
+        <attr name="shadowDy" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="ShadowContainer">
+        <!--阴影颜色-->
+        <attr name="containerShadowColor" format="color"/>
+        <!--阴影的扩展距离-->
+        <attr name="containerShadowDistance" format="dimension"/>
+        <!--子View到ShadowContainer的距离,如果阴影的扩展距离为3，向下偏移为4，那么containerToViewLength为7，才可以将阴影都显示出来-->
+        <attr name="containerToViewLength" format="dimension"/>
+        <!--设置子View背景的圆角大小-->
+        <attr name="containerCornerRadius" format="dimension"/>
+        <!--阴影在X轴方向上的偏移量-->
+        <attr name="deltaX" format="dimension"/>
+        <!--阴影在Y轴方向上的偏移量，向下偏移-->
+        <attr name="deltaY" format="dimension"/>
+        <attr name="enable" format="boolean"/>
+    </declare-styleable>
+</resources>

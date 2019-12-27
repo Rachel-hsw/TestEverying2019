@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.test.hsw.view.ShadowContainer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:containerCornerRadius="45dp"
+        app:containerShadowColor="#ffe1e5f0"
+        app:containerShadowDistance="3dp"
+        app:containerToViewLength="6dp"
+        app:deltaY="3dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_white_4" />
+    </com.test.hsw.view.ShadowContainer>
+
+    <com.test.hsw.view.ShadowView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:gravity="center" />
+</LinearLayout>
