@@ -21,7 +21,7 @@ import java.util.Optional;
 /**
  * https://www.cnblogs.com/Orange42/p/9797117.html
  */
-class NetUtil {
+public class NetUtil {
     /***
      * 安卓手机获取IP地址
      */
@@ -100,7 +100,7 @@ class NetUtil {
      * @return
      * @throws SocketException
      */
-    static Optional<?> getLocalIp4Address() throws SocketException {
+    public static Optional<?> getLocalIp4Address() throws SocketException {
         final List<Inet4Address> ipByNi = getLocalIp4AddressFromNetworkInterface();
         if (ipByNi.isEmpty() || ipByNi.size() > 1) {
             //https://www.cnblogs.com/zhangboyu/p/7580262.html

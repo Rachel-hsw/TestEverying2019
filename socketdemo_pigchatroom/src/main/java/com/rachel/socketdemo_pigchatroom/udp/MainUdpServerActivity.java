@@ -1,6 +1,12 @@
 package com.rachel.socketdemo_pigchatroom.udp;
 
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
+
 import com.rachel.socketdemo_pigchatroom.NetUtil;
+import com.rachel.socketdemo_pigchatroom.R;
+import com.rachel.socketdemo_pigchatroom.util.ToastUtils;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -11,14 +17,17 @@ import java.util.Optional;
 import static com.rachel.socketdemo_pigchatroom.Constants.UDP_PORT;
 
 /**
- * Step 1：创建DatagramSocket，指定端口号
- * Step 2：创建DatagramPacket
- * Step 3：接收客户端发送的数据信息
- * Step 4：读取数据
+ * 开启UDP服务器,监听端口
  */
-public class UPDServer {
-    public static void main(String[] args) {
-        accept();
+public class MainUdpServerActivity extends AppCompatActivity {
+
+    private final static String TAG = "Rachel_test";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_udp);
+        new Thread(() -> accept()).start();
     }
 
     /**
@@ -37,12 +46,12 @@ public class UPDServer {
             DatagramPacket packet = new DatagramPacket(data, data.length);
             // 3.接收客户端发送的数据
             Optional<Inet4Address> ip4Address = (Optional<Inet4Address>) NetUtil.getLocalIp4Address();
-            System.out.println("Local ip:" + ip4Address + "****服务器端已经启动，等待客户端发送数据");
+            ToastUtils.get().showText("Local ip:" + ip4Address + "****服务器端已经启动，等待客户端发送数据");
             // 此方法在接收到数据报之前会一直阻塞
             socket.receive(packet);
             // 4.读取数据
             String info = new String(data, 0, packet.getLength());
-            System.out.println("我是服务器，客户端说：" + info);
+            ToastUtils.get().showText("我是服务器，客户端说：" + info);
 
             //B.响应客户端数据
             // 1.定义客户端的地址、端口号、数据

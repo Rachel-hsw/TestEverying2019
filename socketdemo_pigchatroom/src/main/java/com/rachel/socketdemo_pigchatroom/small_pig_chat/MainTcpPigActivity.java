@@ -22,6 +22,9 @@ import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import static com.rachel.socketdemo_pigchatroom.Constants.TCP_DEMO_HOST;
+import static com.rachel.socketdemo_pigchatroom.Constants.TCP_DEMO_PORT;
+
 /**
  * 一个简易聊天系统
  * 接着到客户端，客户端的难点在于要另外开辟线程的问题，因为Android不允许直接在主线程中做网络操作，
@@ -30,7 +33,7 @@ import java.util.concurrent.Executors;
  *
  * @author Rachel
  */
-public class MainActivity extends AppCompatActivity {
+public class MainTcpPigActivity extends AppCompatActivity {
 
     /**
      * 定义相关变量,完成初始化
@@ -38,11 +41,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView txtshow;
     private EditText editsend;
     private Button btnsend;
-    /**
-     * 内网地址，而不是网卡地址
-     */
-    private static final String HOST = "192.168.50.238";
-    private static final int PORT = 12345;
     private Socket socket = null;
     private BufferedReader in = null;
     private PrintWriter out = null;
@@ -126,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     socket = new Socket();
                     //设置连接超时时间
-                    socket.connect(new InetSocketAddress(HOST, PORT), 1000);
+                    socket.connect(new InetSocketAddress(TCP_DEMO_HOST, TCP_DEMO_PORT), 1000);
                     in = new BufferedReader(new InputStreamReader(socket.getInputStream(), "UTF-8"));
                     out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
                 } catch (Exception e) {

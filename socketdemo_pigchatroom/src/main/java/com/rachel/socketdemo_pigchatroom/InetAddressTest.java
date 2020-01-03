@@ -37,5 +37,46 @@ public class InetAddressTest {
         //获取当前使用的ip
         Optional<Inet4Address> ip4Address= (Optional<Inet4Address>) NetUtil.getLocalIp4Address();
         System.out.println("Local ip:" + ip4Address);
+
+        System.out.println("-----第一种方式-------");
+        // 第一种方法：通过域名来获取IP对象（包括域名+IP地址）
+        InetAddress inet1 = InetAddress.getByName("www.baidu.com");
+        System.out.println("IP对象：" + inet1);
+        // 获取对应的IP
+        System.out.println("域名：" + inet1.getHostName());
+        System.out.println("IP地址：" + inet1.getHostAddress());
+
+        System.out.println("-----第二种方式-------");
+        // 第二种方法：请注意后面byte数组的写法(参看：https://blog.csdn.net/ling376962380/article/details/72824880)
+        InetAddress inet2 = InetAddress.getByAddress("www.baidu.com", new byte[] { (byte) 180, 97, 33, 107 });
+        System.out.println("IP对象：" + inet2);
+        System.out.println("域名：" + inet2.getHostName());
+        System.out.println("IP地址：" + inet2.getHostAddress());
+
+        System.out.println("-----第三种方式-------");
+        // 第三种方法：通过IP地址字符串
+        InetAddress inet3 = InetAddress.getByName("180.97.33.107");
+        System.out.println("IP对象：" + inet3);
+        System.out.println("域名：" + inet3.getHostName());
+        System.out.println("IP地址：" + inet3.getHostAddress());
+
+        System.out.println("-----第四种方式-------");
+        // 第四种方法：通过IP地址字符串
+        InetAddress inet4 = InetAddress.getByAddress(new byte[] { (byte) 180, 97, 33, 107 });
+        System.out.println("IP对象：" + inet4);
+        System.out.println("域名：" + inet4.getHostName());
+        System.out.println("IP地址：" + inet4.getHostAddress());
+
+        System.out.println("------获取本机的----");
+        InetAddress inet5 = InetAddress.getLocalHost();
+        System.out.println("IP对象：" + inet5);
+        System.out.println("域名：" + inet5.getHostName());
+        System.out.println("IP地址：" + inet5.getHostAddress());
+
+        System.out.println("----获取回环地址----");
+        InetAddress inet6 = InetAddress.getLoopbackAddress();
+        System.out.println("IP对象：" + inet6);
+        System.out.println("域名：" + inet6.getHostName());
+        System.out.println("IP地址：" + inet6.getHostAddress());
     }
 }
