@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 
 import com.test.hsw.R;
 
-public class MainActivity extends AppCompatActivity {
+public class MyActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private int i;
 

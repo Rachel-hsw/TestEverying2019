@@ -15,19 +15,19 @@ import java.util.List;
 /**
  * 老子以后写代码，一行代码一条注释。还附带简介，哼哼
  */
-public class MainActivity extends AppCompatActivity {
+public class RecycleViewActivity extends AppCompatActivity {
 
     private RecyclerView contentRv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_rv);
         contentRv = findViewById(R.id.content_rv);
         //造了9条假数据，假装自己是个正了八经的九宫格
         List<String> strings = new ArrayList<>();
         for (int i = 0; i < 9; i++) {
-            strings.add("");
+            strings.add("哈哈哈哈哈");
         }
         //设置RecyclerView的布局管理器，这里我给的是一个三列，垂直方向上滑动的布局
         GridLayoutManager layoutManager = new GridLayoutManager(this, 3, GridLayoutManager.VERTICAL, false);
@@ -46,4 +46,6 @@ public class MainActivity extends AppCompatActivity {
         contentRv.addItemDecoration(new RecycleViewDivider(
                 this, LinearLayoutManager.HORIZONTAL, 10, Color.BLUE));
     }
+
+
 }

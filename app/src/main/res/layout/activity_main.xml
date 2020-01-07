@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".recyclerview.MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
     <!--未测试完成https://developer.android.google.cn/reference/android/graphics/drawable/LayerDrawable.html?hl=en#attr_android:id-->
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:src="@drawable/test"/>
-<android.support.v7.widget.RecyclerView
-    android:id="@+id/content_rv"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/test" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/my_btn"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:onClick="goMyActivity"
+        android:text="查看我的自定义View" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:onClick="goRecycleViewActivity"
+        android:text="查看RecycleView" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:onClick="goEventDispatcherActivity"
+        android:text="查看事件分发" />
+</LinearLayout>
