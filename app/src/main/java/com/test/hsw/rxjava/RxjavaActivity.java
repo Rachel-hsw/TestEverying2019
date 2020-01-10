@@ -27,7 +27,7 @@ public class RxjavaActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_rxjava);
         //        1) 创建 Observer
 //        Observer 即观察者，它决定事件触发的时候将有怎样的行为。 RxJava 中的 Observer 接口的实现方式：
         Observer<String> observer = new Observer<String>() {

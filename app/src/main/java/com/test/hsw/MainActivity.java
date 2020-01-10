@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.test.hsw.Util.ByteUtil;
 import com.test.hsw.rxjava.RxjavaActivity;
+import com.test.hsw.rxjava.TestActivity;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -30,6 +31,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goRxJavaActivity(View view) {
-        startActivity(new Intent(this, RxjavaActivity.class));
+        startActivity(new Intent(this, TestActivity.class));
     }
 }

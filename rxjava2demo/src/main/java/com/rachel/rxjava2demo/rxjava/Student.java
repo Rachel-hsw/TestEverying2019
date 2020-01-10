@@ -1,4 +1,4 @@
-package com.test.hsw.rxjava;
+package com.rachel.rxjava2demo.rxjava;
 
 import java.util.List;
 
