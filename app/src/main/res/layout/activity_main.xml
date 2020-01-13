@@ -11,7 +11,7 @@
         android:layout_width="160dp"
         android:layout_height="40dp"
         android:onClick="goRxJavaActivity"
-        android:text="查看我的自定义View" />
+        android:text="RxJava测试" />
 
 
 </LinearLayout>

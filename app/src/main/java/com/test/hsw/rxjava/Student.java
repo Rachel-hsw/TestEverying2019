@@ -1,5 +1,6 @@
 package com.test.hsw.rxjava;
 
+import java.util.ArrayList;
 import java.util.List;
 
 class Student {
@@ -8,6 +9,10 @@ class Student {
 
     public Student(String name) {
         this.name=name;
+        courses=new ArrayList<>();
+        courses.add(new Course("语文"));
+        courses.add(new Course("数学"));
+        courses.add(new Course("英语"));
     }
 
     public Student() {
