@@ -1,7 +1,11 @@
 package com.test.hsw.ReentrantLock;
 
 import java.util.concurrent.locks.ReentrantLock;
-//https://www.cnblogs.com/takumicx/p/9338983.html
+
+/**
+ * ReentrantLock(重入锁)功能详解和应用演示
+ * https://www.cnblogs.com/takumicx/p/9338983.html
+ */
 public class ReentrantLockTest {
     /**2.1 ReentrantLock是独占锁且可重入的
      * 上面的代码通过lock()方法先获取锁三次，然后通过unlock()方法释放锁3次，程序可以正常退出。从上面的例子可以看出,ReentrantLock是可以重入的锁,

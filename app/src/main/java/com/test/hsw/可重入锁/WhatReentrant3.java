@@ -1,4 +1,5 @@
 package com.test.hsw.可重入锁;
+
 import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -15,7 +16,7 @@ public class WhatReentrant3 {
             @Override
             public void run() {
                 try {
-                    lock.lock();
+                    lock.lock();//hsw.写一下自己的理解，lock.lock()方法会获取锁，而这个锁是主线程的，所以在它释放掉之前，主线程不会再往下走
                     System.out.println("第1次获取锁，这个锁是：" + lock);
                     int index = 1;
                     while (true) {

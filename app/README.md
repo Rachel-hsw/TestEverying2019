@@ -11,3 +11,21 @@ RxJava系列文章目录导读：--操作符用法详解
 1、RxJava map- 一对一，事件对象的直接变换
 2、RxJava flatMap - 一对多，返回的是个 Observable 对象
 3、RxJava concatMap 一对多，顺序转换
+
+
+ReentrantLock
+https://www.cnblogs.com/takumicx/p/9338983.html
+ReentrantLock(重入锁)功能详解和应用演示
+
+目录
+1. ReentrantLock简介
+2. ReentrantLock和synchronized的相同点
+2.1 ReentrantLock是独占锁且可重入的
+3. ReentrantLock相比synchronized的额外功能
+3.1 ReentrantLock可以实现公平锁。
+3.2 .ReentrantLock可响应中断
+3.3 获取锁时限时等待
+4. 结合Condition实现等待通知机制
+4.1 Condition使用简介
+4.2 使用Condition实现简单的阻塞队列
+5. 总结
