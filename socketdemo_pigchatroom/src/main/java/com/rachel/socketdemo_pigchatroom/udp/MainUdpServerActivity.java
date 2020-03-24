@@ -2,7 +2,6 @@ package com.rachel.socketdemo_pigchatroom.udp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
 import com.rachel.socketdemo_pigchatroom.NetUtil;
 import com.rachel.socketdemo_pigchatroom.R;
@@ -48,11 +47,14 @@ public class MainUdpServerActivity extends AppCompatActivity {
             Optional<Inet4Address> ip4Address = (Optional<Inet4Address>) NetUtil.getLocalIp4Address();
             ToastUtils.get().showText("Local ip:" + ip4Address + "****服务器端已经启动，等待客户端发送数据");
             // 此方法在接收到数据报之前会一直阻塞
-            socket.receive(packet);
-            // 4.读取数据
-            String info = new String(data, 0, packet.getLength());
-            ToastUtils.get().showText("我是服务器，客户端说：" + info);
-
+            socket.setSoTimeout(60 * 1000);
+            long startTime = System.currentTimeMillis();
+            while (startTime - System.currentTimeMillis() < 60 * 1000) {
+                socket.receive(packet);
+                // 4.读取数据
+                String info = new String(data, 0, packet.getLength());
+                ToastUtils.get().showText("我是服务器，客户端说：" + info);
+            }
             //B.响应客户端数据
             // 1.定义客户端的地址、端口号、数据
             InetAddress address = packet.getAddress();
