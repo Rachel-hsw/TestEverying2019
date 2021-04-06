@@ -4,7 +4,15 @@ package com.test.hsw.可重入锁;
 import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 
-// 演示可重入锁是什么意思
+
+/**
+ * 可以发现没发生死锁，可以多次获取相同的锁
+ * <p>
+ * 可重入锁有
+ * <p>
+ * synchronized
+ * ReentrantLock
+ */
 public class WhatReentrant2 {
     public static void main(String[] args) {
         final ReentrantLock lock = new ReentrantLock();

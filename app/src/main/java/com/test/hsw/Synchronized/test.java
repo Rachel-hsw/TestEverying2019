@@ -1,5 +1,7 @@
 package com.test.hsw.Synchronized;
 
+import java.util.concurrent.LinkedBlockingQueue;
+
 /**
  * https://www.cnblogs.com/jlutiger/p/10548291.html
  * 一、synchronized知识
@@ -10,7 +12,45 @@ package com.test.hsw.Synchronized;
  * 基于上述，引入了互斥锁
  */
 public class test {
-    public static void main(String[] args) {
+    private static LinkedBlockingQueue<Integer> networkQueue;
 
+    public static void main(String[] args) {
+        networkQueue = new LinkedBlockingQueue<>();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = 1; i < 5; i++) {
+                    networkQueue.add(i);
+                }
+            }
+        }).start();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (true) {
+                    try {
+                        final int i = networkQueue.take();
+                       new Thread(new Runnable() {
+                           @Override
+                           public void run() {
+                               testSy(i);
+                           }
+                       }).start();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            }
+        }).start();
+    }
+
+    private synchronized static void testSy(int i) {
+        System.out.println("我是i" + i);
+        try {
+            Thread.sleep(10*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

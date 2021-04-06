@@ -9,10 +9,13 @@ import com.rachel.rxjava2demo.R;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.ObservableSource;
 import io.reactivex.Observer;
+import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
+import io.reactivex.schedulers.Schedulers;
 
 /**
  * * 作者：itbird01
@@ -29,8 +32,60 @@ public class TestActivity extends Activity {
         setContentView(R.layout.activity_rxjava);
         normalSubscribe();
         subscribeAction();
-        subscribeTransfromMap();
+        subscribeTransformMap();
+        //flatMap(): 这是一个很有用但非常难理解的变换
+        subscribeTransformFlatMap();
+        subscribeTransformConcatMap();
+    }
 
+    private void subscribeTransformConcatMap() {
+
+
+    }
+
+    private void subscribeTransformFlatMap() {
+        Log.d(tag, "------------------------------------subscribeTransformFlatMap-------------------------------------------------- ");
+        Observable.create(new ObservableOnSubscribe<Integer>() {
+            @Override
+            public void subscribe(ObservableEmitter<Integer> emitter) {
+                Log.i(tag, "subscribe--运行线程：" + Thread.currentThread().getName());
+                emitter.onNext(1);
+                emitter.onNext(2);
+                emitter.onNext(3);
+                emitter.onComplete();
+            }
+        }).subscribeOn(Schedulers.io())
+                .subscribeOn(Schedulers.computation())
+                .observeOn(AndroidSchedulers.mainThread())
+                //FlatMap变换
+                .flatMap(new Function<Integer, ObservableSource<String>>() {
+                    @Override
+                    public ObservableSource<String> apply(Integer integer) {
+                        //将int类型参数转换为string类型参数，然后用just操作符将其重新发射出去
+                        return Observable.just(String.valueOf(integer));
+                    }
+                })
+                .subscribe(new Observer<String>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+
+                    }
+
+                    @Override
+                    public void onNext(String s) {
+                        Log.i(tag, "onNext--运行线程：" + Thread.currentThread().getName());
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
     }
 
     /**
@@ -42,8 +97,8 @@ public class TestActivity extends Activity {
      * 01-10 15:48:49.917 4397-4397/? D/Rachel_test: onNextrachel
      * 01-10 15:48:49.917 4397-4397/? D/Rachel_test: onComplete
      */
-    private void subscribeTransfromMap() {
-        Log.d(tag, "------------------------------------subscribeTransfromMap-------------------------------------------------- ");
+    private void subscribeTransformMap() {
+        Log.d(tag, "------------------------------------subscribeTransformMap-------------------------------------------------- ");
         Observable.just("rachel").map(new Function<String, Student>() {
             @Override
             public Student apply(String s) throws Exception {
@@ -57,7 +112,7 @@ public class TestActivity extends Activity {
 
             @Override
             public void onNext(Student student) {
-                Log.d(tag, "onNext"+student.getName());
+                Log.d(tag, "onNext" + student.getName());
             }
 
             @Override
@@ -73,9 +128,9 @@ public class TestActivity extends Activity {
     }
 
     /**
-     01-10 15:48:49.916 4397-4397/? D/Rachel_test: 123
-     01-10 15:48:49.916 4397-4397/? D/Rachel_test: 456
-     01-10 15:48:49.916 4397-4397/? D/Rachel_test: 789
+     * 01-10 15:48:49.916 4397-4397/? D/Rachel_test: 123
+     * 01-10 15:48:49.916 4397-4397/? D/Rachel_test: 456
+     * 01-10 15:48:49.916 4397-4397/? D/Rachel_test: 789
      */
     private void subscribeAction() {
         Log.d(tag, "------------------------------------subscribeAction-------------------------------------------------- ");
@@ -91,10 +146,10 @@ public class TestActivity extends Activity {
     }
 
     /**
-     01-10 15:48:49.915 4397-4397/? D/Rachel_test: onNextHello
-     01-10 15:48:49.915 4397-4397/? D/Rachel_test: onNextHi
-     01-10 15:48:49.915 4397-4397/? D/Rachel_test: onNextAloha
-     01-10 15:48:49.915 4397-4397/? D/Rachel_test: onComplete
+     * 01-10 15:48:49.915 4397-4397/? D/Rachel_test: onNextHello
+     * 01-10 15:48:49.915 4397-4397/? D/Rachel_test: onNextHi
+     * 01-10 15:48:49.915 4397-4397/? D/Rachel_test: onNextAloha
+     * 01-10 15:48:49.915 4397-4397/? D/Rachel_test: onComplete
      */
     private void normalSubscribe() {
         Log.d(tag, "------------------------------------normalSubscribe-------------------------------------------------- ");
@@ -104,13 +159,15 @@ public class TestActivity extends Activity {
             public void onSubscribe(Disposable d) {
 
             }
+
             @Override
             public void onComplete() {
                 Log.d(tag, "onComplete");
             }
+
             @Override
             public void onNext(Object o) {
-                Log.d(tag, "onNext"+o);
+                Log.d(tag, "onNext" + o);
             }
 
             @Override
