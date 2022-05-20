@@ -1,4 +1,4 @@
-<com.test.hsw.事件分发.校长类 xmlns:android="http://schemas.android.com/apk/res/android"
+<com.test.hsw.事件分发.A校长类 xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearlayout_test"
     android:layout_width="match_parent"
@@ -6,17 +6,17 @@
     android:orientation="horizontal"
     tools:context=".事件分发.EventDispatcherActivity">
 
-    <com.test.hsw.事件分发.老师类
+    <com.test.hsw.事件分发.B老师类
         android:id="@+id/center"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.test.hsw.事件分发.学生类
+        <com.test.hsw.事件分发.C学生类
             android:id="@+id/btn_test"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:text="测试按钮" />
-    </com.test.hsw.事件分发.老师类>
+    </com.test.hsw.事件分发.B老师类>
 
-</com.test.hsw.事件分发.校长类>
+</com.test.hsw.事件分发.A校长类>

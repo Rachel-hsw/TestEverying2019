@@ -6,10 +6,10 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.LinearLayout;
 
-public class 校长类 extends LinearLayout {
+public class A校长类 extends LinearLayout {
     private final static String tag = "rachel";
 
-    public 校长类(Context context, AttributeSet attrs) {
+    public A校长类(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -17,10 +17,10 @@ public class 校长类 extends LinearLayout {
     public boolean dispatchTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(tag, "校长类-dispatchTouchEvent-ACTION_DOWN...");
+                Log.i(tag, "A校长类-dispatchTouchEvent-ACTION_DOWN...");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(tag, "校长类-dispatchTouchEvent-ACTION_UP...");
+                Log.i(tag, "A校长类-dispatchTouchEvent-ACTION_UP...");
                 break;
             default:
                 break;
@@ -32,10 +32,10 @@ public class 校长类 extends LinearLayout {
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(tag, "校长类-onInterceptTouchEvent-ACTION_DOWN...");
+                Log.i(tag, "A校长类-onInterceptTouchEvent-ACTION_DOWN...");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(tag, "校长类-onInterceptTouchEvent-ACTION_UP...");
+                Log.i(tag, "A校长类-onInterceptTouchEvent-ACTION_UP...");
                 break;
             default:
                 break;
@@ -47,10 +47,10 @@ public class 校长类 extends LinearLayout {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(tag, "校长类-onTouchEvent-ACTION_DOWN...");
+                Log.i(tag, "A校长类-onTouchEvent-ACTION_DOWN...");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(tag, "校长类-onTouchEvent-ACTION_UP...");
+                Log.i(tag, "A校长类-onTouchEvent-ACTION_UP...");
                 break;
             default:
                 break;

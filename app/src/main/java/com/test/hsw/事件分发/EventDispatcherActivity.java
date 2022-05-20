@@ -12,16 +12,16 @@ import com.test.hsw.R;
 
 public class EventDispatcherActivity extends Activity {
     private final static String tag = "rachel";
-    学生类 学生;
-    校长类 校长;
-    private 老师类 老师;
+    C学生类 学生;
+    A校长类 校长;
+    private B老师类 老师;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event_dispatcher);
-        学生 = (学生类) findViewById(R.id.btn_test);
+        学生 = (C学生类) findViewById(R.id.btn_test);
         学生.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -46,7 +46,7 @@ public class EventDispatcherActivity extends Activity {
                 return false;
             }
         });
-        老师 = (老师类) findViewById(R.id.center);
+        老师 = (B老师类) findViewById(R.id.center);
         老师.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,7 +69,7 @@ public class EventDispatcherActivity extends Activity {
                 return false;
             }
         });
-        校长 = (校长类) findViewById(R.id.linearlayout_test);
+        校长 = (A校长类) findViewById(R.id.linearlayout_test);
         校长.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {

@@ -6,10 +6,10 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.Button;
 
-public class 学生类 extends Button {
+public class C学生类 extends Button {
     private final static String tag = "rachel";
 
-    public 学生类(Context context, AttributeSet attrs) {
+    public C学生类(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -17,10 +17,10 @@ public class 学生类 extends Button {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(tag, "学生类-onTouchEvent-ACTION_DOWN...");
+                Log.i(tag, "C学生类-onTouchEvent-ACTION_DOWN...");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(tag, "学生类-onTouchEvent-ACTION_UP...");
+                Log.i(tag, "C学生类-onTouchEvent-ACTION_UP...");
                 break;
             default:
                 break;
@@ -32,15 +32,14 @@ public class 学生类 extends Button {
     public boolean dispatchTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(tag, "学生类-dispatchTouchEvent-ACTION_DOWN...");
+                Log.i(tag, "C学生类-dispatchTouchEvent-ACTION_DOWN...");
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(tag, "学生类-dispatchTouchEvent-ACTION_UP...");
+                Log.i(tag, "C学生类-dispatchTouchEvent-ACTION_UP...");
                 break;
             default:
                 break;
         }
-
         return super.dispatchTouchEvent(event);
     }
 }
