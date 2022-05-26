@@ -19,6 +19,7 @@
         <activity android:name=".recyclerview.RecycleViewActivity" />
         <activity android:name=".事件分发.EventDispatcherActivity" />
         <activity android:name=".myview.MyActivity" />
+        <activity android:name=".LayoutInflater原理分析.LayoutInflaterActivity" />
     </application>
 
 </manifest>

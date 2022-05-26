@@ -14,20 +14,25 @@
 
     <Button
         android:id="@+id/my_btn"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:onClick="goMyActivity"
         android:text="查看我的自定义View" />
 
     <Button
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:onClick="goRecycleViewActivity"
         android:text="查看RecycleView" />
 
     <Button
-        android:layout_width="160dp"
-        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:onClick="goEventDispatcherActivity"
         android:text="查看事件分发" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:onClick="goLayoutInflaterActivity"
+        android:text="LayoutInflater原理分析" />
 </LinearLayout>

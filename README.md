@@ -4,3 +4,7 @@
 目前只有一个RecyclerView
 ## 效果图
 ![](/img/result.png "效果图")
+
+
+Android 事件分发机制
+https://www.jianshu.com/p/54a59e142d16

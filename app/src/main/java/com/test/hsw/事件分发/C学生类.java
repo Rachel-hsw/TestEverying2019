@@ -25,7 +25,7 @@ public class C学生类 extends Button {
             default:
                 break;
         }
-        return false;
+        return super.onTouchEvent(event);
     }
 
     @Override

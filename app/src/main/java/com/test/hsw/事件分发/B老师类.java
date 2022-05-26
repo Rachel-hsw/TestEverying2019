@@ -40,7 +40,7 @@ public class B老师类 extends LinearLayout {
             default:
                 break;
         }
-        return super.onInterceptTouchEvent(ev);
+        return true;
     }
 
     @Override
@@ -55,7 +55,7 @@ public class B老师类 extends LinearLayout {
             default:
                 break;
         }
-        return false;
+        return super.onTouchEvent(event);
     }
 
 
