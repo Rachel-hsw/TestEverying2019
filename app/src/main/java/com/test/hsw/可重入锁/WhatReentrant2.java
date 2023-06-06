@@ -44,5 +44,7 @@ public class WhatReentrant2 {
                 }
             }
         }).start();
+
+        //如果以上线程不执行lock.unlock();其实也没有关系，因为接下来没有人获取锁，如果有人去获取，但是之前的没有释放，就会出问题
     }
 }

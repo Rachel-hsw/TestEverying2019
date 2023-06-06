@@ -24,7 +24,9 @@ public class ReentrantLockTest4 {
         new Thread(new SignalThread()).start();
         System.out.println("主线程等待通知");
         try {
-            condition.await();//await()将释放锁，并在主线程上等待
+            //当前线程调用await方法后，线程将释放锁，并且将自己沉睡，等待唤醒，子线程获取到锁后，开始做事，完毕后，调用Condition的signalall方法
+            // 唤醒刚刚沉睡的线程，沉睡线程恢复执行。
+            condition.await();
             System.out.println("await");
         } finally {
             /*lock.unlock();*/
@@ -38,9 +40,11 @@ public class ReentrantLockTest4 {
 
         @Override
         public void run() {
+            //这里必须先获取锁，因为当前的线程不是condition的所有者。当前线程要获取锁之后，才能调用condition.signal();
             lock.lock();
             System.out.println("获得锁");
             try {
+                // TODO: 2021/4/6 做事
                 System.out.println("子线程运行中。。");
                 Thread.sleep(1000 * 10);
                 condition.signal();
