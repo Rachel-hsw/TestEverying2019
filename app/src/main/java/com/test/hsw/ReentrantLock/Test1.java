@@ -5,6 +5,8 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
+ * 可重入锁详解（什么是可重入）
+ * https://blog.csdn.net/w8y56f/article/details/89554060?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-89554060-blog-122043596.pc_relevant_3mothn_strategy_and_data_recovery&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-89554060-blog-122043596.pc_relevant_3mothn_strategy_and_data_recovery&utm_relevant_index=2
  * 本测试的目的：验证锁
  * 和Test2对比就会发现，由于2里面是公共变量，第二次创建的实例会把第一个覆盖掉，但是第一个并没有释放，所以最后会死锁
  * 并且请注意这是测试的不同线程的锁

@@ -27,9 +27,11 @@ public class ReentrantLockTest4 {
             condition.await();//await()将释放锁，并在主线程上等待
             System.out.println("await");
         } finally {
-            lock.unlock();
+            /*lock.unlock();*/
         }
         System.out.println("主线程恢复运行");
+        new Thread(new LockThread()).start();//永远获得不了锁，因为前面的释放被我注释掉了
+        // （可重入是指，同一个线程可以多次获得锁，但是获得多少次，就得释放多少次，不然其它线程就无法获得锁。这里我主线程没释放，所以子线程获得不了，子线程永远卡死）
     }
 
     static class SignalThread implements Runnable {
@@ -37,13 +39,34 @@ public class ReentrantLockTest4 {
         @Override
         public void run() {
             lock.lock();
+            System.out.println("获得锁");
             try {
+                System.out.println("子线程运行中。。");
+                Thread.sleep(1000 * 10);
                 condition.signal();
                 System.out.println("子线程通知");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } finally {
+                System.out.println("释放锁");
+                lock.unlock();
+            }
+        }
+    }
+
+    static class LockThread implements Runnable {
+
+        @Override
+        public void run() {
+            System.out.println("子线程2运行");
+            lock.lock();
+            System.out.println("子线程2获得锁");
+            try {
                 Thread.sleep(1000 * 10);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
+                System.out.println("子线程2释放锁");
                 lock.unlock();
             }
         }
